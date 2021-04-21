@@ -1,16 +1,16 @@
 .main {
   width: 100%;
-  margin-top: rem(60);
+  padding-top: rem(60);
   &__hero {
     margin: rem(20) 0 rem(10) 0;
-    padding: rem(10);
+    padding: rem(20) 0;
     background-color: $colorSec;
 
     &--img {
       width: 100%;
-
+      min-height: rem(200);
       object-fit: cover;
-      object-position: 0 95%;
+      //   object-position: 0 95%;
     }
   }
   &__articles {
