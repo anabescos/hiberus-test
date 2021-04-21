@@ -1,17 +1,19 @@
 .header {
   width: 100%;
-  height: rem(60);
   position: fixed;
   z-index: 1000;
+  top: 0;
+  height: rem(60);
   background-color: $colorSec;
   display: flex;
   box-shadow: rem(0) rem(0) rem(5) rem(5) rgba(0, 0, 0, 0.205);
   &__logo {
-    padding-top: rem(7);
+    margin-left: rem(20);
+    padding: rem(7);
     display: flex;
     align-items: center;
     &--img {
-      margin: rem(20);
+      //   margin: rem(20);
       height: rem(35);
     }
   }
