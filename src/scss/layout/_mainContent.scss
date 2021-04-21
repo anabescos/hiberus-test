@@ -13,7 +13,11 @@
       width: 100%;
       min-height: rem(200);
       object-fit: cover;
-      //   object-position: 0 95%;
+
+      @include desktop {
+        max-height: 35vh;
+        object-position: 0 25%;
+      }
     }
   }
   &__articles {
@@ -34,8 +38,17 @@
       margin: rem(10) rem(0);
       max-width: 31.5%;
     }
+    @include tablet {
+      margin: rem(10) rem(0);
+      max-width: 32.5%;
+    }
     &--img {
       width: 100%;
+      @include desktop {
+        max-height: 25vh;
+        object-fit: cover;
+        object-position: 0 15%;
+      }
     }
     &--text {
       padding-top: rem(10);

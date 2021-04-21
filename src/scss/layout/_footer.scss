@@ -13,6 +13,9 @@
     grid-template-columns: 5fr 1fr;
     align-self: center;
   }
+  @include desktop {
+    grid-template-columns: 2fr 1fr;
+  }
 
   &__menu {
     margin: rem(30);
@@ -24,6 +27,9 @@
       grid-template-columns: repeat(7, 1fr);
       grid-template-rows: rem(80);
       align-self: center;
+    }
+    @include desktop {
+      font-size: rem(14);
     }
 
     &--option {
