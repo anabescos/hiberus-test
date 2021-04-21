@@ -3,11 +3,13 @@
   margin-top: rem(60);
   &__hero {
     margin: rem(20) 0 rem(10) 0;
-    border: rem(10) solid $colorSec;
-    // background-color: $colorSec;
+    padding: rem(10);
+    background-color: $colorSec;
+
     &--img {
       width: 100%;
       max-height: rem(500);
+      object-fit: cover;
     }
   }
   &__articles {
