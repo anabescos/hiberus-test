@@ -8,13 +8,17 @@
 
     &--img {
       width: 100%;
-      max-height: rem(500);
+
       object-fit: cover;
+      object-position: 0 95%;
     }
   }
   &__articles {
     display: flex;
     flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
   }
   &__article {
     background-color: $colorSec;
